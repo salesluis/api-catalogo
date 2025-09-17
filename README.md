@@ -21,7 +21,7 @@ Uma API REST desenvolvida em .NET 8 para gerenciamento de catálogo de produtos 
 
 ### 1. Clone o repositório
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/salesluis/api-catalogo
 cd APICatalogo
 ```
 
