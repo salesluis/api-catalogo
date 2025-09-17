@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  apicatalogo:
+    build:
+      context: "/home/luis/dev/studies/APICatalogo/APICatalogo"
+      dockerfile: "APICatalogo/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/APICatalogo.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "apicatalogo:dev"
+    ports: []
+    volumes:
+    - "/home/luis/dev/studies/APICatalogo/APICatalogo/APICatalogo:/app:rw"
+    - "/home/luis/dev/studies/APICatalogo/APICatalogo:/src:rw"
+    - "/home/luis/.nuget/packages:/home/app/.nuget/packages"
+    working_dir: "/app"
